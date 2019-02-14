@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Tanah</title>
+</head>
+<body>
+<section layout:fragment="content" class="panel">
+        <header class="panel-heading">
+            <h2 class="panel-title">Data Tanah</h2>
+        </header>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="mb-md">
+                        <button id="addToTable" class="btn btn-primary">Add <i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="col-md-4" align="left">
+                    <div class="input-group input-search">
+                        <input type="text" class="form-control" name="q" id="q" placeholder="Search...">
+                        <span class="input-group-btn">
+						    <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+						</span>
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-condensed mb-none">
+                    <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Company</th>
+                        <th>Price</th>
+                        <th>Change</th>
+                        <th>Change %</th>
+                        <th>Open</th>
+                        <th>High</th>
+                        <th>Low</th>
+                        <th>Volume</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>AAC</td>
+                        <td>AUSTRALIAN AGRICULTURAL COMPANY LIMITED.</td>
+                        <td class="text-right">$1.38</td>
+                        <td class="text-right">-0.01</td>
+                        <td class="text-right">-0.36%</td>
+                        <td class="text-right">$1.39</td>
+                        <td class="text-right">$1.39</td>
+                        <td class="text-right">$1.38</td>
+                        <td class="text-right">9,395</td>
+                    </tr>
+                    <tr>
+                        <td>AAD</td>
+                        <td>ARDENT LEISURE GROUP</td>
+                        <td class="text-right">$1.15</td>
+                        <td class="text-right">  +0.02</td>
+                        <td class="text-right">1.32%</td>
+                        <td class="text-right">$1.14</td>
+                        <td class="text-right">$1.15</td>
+                        <td class="text-right">$1.13</td>
+                        <td class="text-right">56,431</td>
+                    </tr>
+                    <tr>
+                        <td>AAX</td>
+                        <td>AUSENCO LIMITED</td>
+                        <td class="text-right">$4.00</td>
+                        <td class="text-right">-0.04</td>
+                        <td class="text-right">-0.99%</td>
+                        <td class="text-right">$4.01</td>
+                        <td class="text-right">$4.05</td>
+                        <td class="text-right">$4.00</td>
+                        <td class="text-right">90,641</td>
+                    </tr>
+                    <tr>
+                        <td>AGO</td>
+                        <td>ATLAS IRON LIMITED</td>
+                        <td class="text-right">$3.17</td>
+                        <td class="text-right">-0.02</td>
+                        <td class="text-right">-0.47%</td>
+                        <td class="text-right">$3.11</td>
+                        <td class="text-right">$3.22</td>
+                        <td class="text-right">$3.10</td>
+                        <td class="text-right">5,416,303</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</section>
+
+</body>
+</html>
