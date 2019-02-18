@@ -10,82 +10,57 @@
 <section layout:fragment="content" class="panel">
         <header class="panel-heading">
             <h2 class="panel-title">Data Tanah</h2>
+            <p class="panel-subtitle">
+                Aplikasi Budgeting Sekolah Tinggi Ekonomi Islam TAZKIA
+            </p>
         </header>
         <div class="panel-body">
             <div class="row">
-                <div class="col-sm-8">
-                    <div class="mb-md">
-                        <button id="addToTable" class="btn btn-primary">Add <i class="fa fa-plus"></i></button>
-                    </div>
-                </div>
-                <div class="col-md-4" align="left">
+                <div class="col-md-4" align="right">
                     <div class="input-group input-search">
                         <input type="text" class="form-control" name="q" id="q" placeholder="Search...">
                         <span class="input-group-btn">
-						    <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+						    <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
 						</span>
+                    </div>
+                </div>
+                <div class="col-sm-5" align="left">
+
+                </div>
+                <div class="col-sm-3" align="left">
+                    <div class="mb-md">
+                        <a th:href="@{/tanah/form}" id="addToTable" class="btn btn-primary">Tambah <i class="fa fa-plus"></i></a>
+                        <div class="btn-group">
+                            <button type="button" class="mb-xs mt-xs mr-xs btn btn-success dropdown-toggle" data-toggle="dropdown">Export <span class="caret"></span></button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">CSV</a></li>
+                                <li><a href="#">Excel</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="table-responsive">
                 <table class="table table-bordered table-striped table-condensed mb-none">
                     <thead>
-                    <tr>
-                        <th>Code</th>
-                        <th>Company</th>
-                        <th>Price</th>
-                        <th>Change</th>
-                        <th>Change %</th>
-                        <th>Open</th>
-                        <th>High</th>
-                        <th>Low</th>
-                        <th>Volume</th>
+                    <tr style="background-color: deepskyblue;">
+                        <th>No</th>
+                        <th>TANAH</th>
+                        <th>LUAS</th>
+                        <th>STATUS</th>
+                        <th></th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td>AAC</td>
-                        <td>AUSTRALIAN AGRICULTURAL COMPANY LIMITED.</td>
-                        <td class="text-right">$1.38</td>
-                        <td class="text-right">-0.01</td>
-                        <td class="text-right">-0.36%</td>
-                        <td class="text-right">$1.39</td>
-                        <td class="text-right">$1.39</td>
-                        <td class="text-right">$1.38</td>
-                        <td class="text-right">9,395</td>
-                    </tr>
-                    <tr>
-                        <td>AAD</td>
-                        <td>ARDENT LEISURE GROUP</td>
-                        <td class="text-right">$1.15</td>
-                        <td class="text-right">  +0.02</td>
-                        <td class="text-right">1.32%</td>
-                        <td class="text-right">$1.14</td>
-                        <td class="text-right">$1.15</td>
-                        <td class="text-right">$1.13</td>
-                        <td class="text-right">56,431</td>
-                    </tr>
-                    <tr>
-                        <td>AAX</td>
-                        <td>AUSENCO LIMITED</td>
-                        <td class="text-right">$4.00</td>
-                        <td class="text-right">-0.04</td>
-                        <td class="text-right">-0.99%</td>
-                        <td class="text-right">$4.01</td>
-                        <td class="text-right">$4.05</td>
-                        <td class="text-right">$4.00</td>
-                        <td class="text-right">90,641</td>
-                    </tr>
-                    <tr>
-                        <td>AGO</td>
-                        <td>ATLAS IRON LIMITED</td>
-                        <td class="text-right">$3.17</td>
-                        <td class="text-right">-0.02</td>
-                        <td class="text-right">-0.47%</td>
-                        <td class="text-right">$3.11</td>
-                        <td class="text-right">$3.22</td>
-                        <td class="text-right">$3.10</td>
-                        <td class="text-right">5,416,303</td>
+                        <td>1</td>
+                        <td>Tanah Komplek kampus sentul</td>
+                        <td class="text-right" style="color: limegreen">20 Hektar</td>
+                        <td>HAL MILIK</td>
+                        <td>
+                            <a href=""><i class="fa fa-pencil"></i></a> &nbsp;&nbsp;&nbsp;
+                            <a href="" class="delete-row"><i class="fa fa-trash-o"></i></a>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
