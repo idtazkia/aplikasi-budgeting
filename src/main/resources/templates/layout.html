@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
-<html class="fixed">
+<head class="fixed">
 <head>
 
     <!-- Basic -->
@@ -39,7 +39,7 @@
     <link rel="stylesheet" th:href="@{/stylesheets/theme-custom.css}">
 
     <!-- Head Libs -->
-    <script th:src="@{vendor/modernizr/modernizr.js}"></script>
+    <script th:src="@{/vendor/modernizr/modernizr.js}"></script>
 
 </head>
 <body>
@@ -555,8 +555,10 @@
             </div>
             <!-- end: page -->
 
-    <aside id="sidebar-right" class="sidebar-right">
-    </aside>
+            <aside id="sidebar-right" class="sidebar-right">
+            </aside>
+        </section>
+    </div>
 </section>
 
 <!-- Vendor -->
