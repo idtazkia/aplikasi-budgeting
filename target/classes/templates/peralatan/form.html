@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Peralatan Baru</title>
+
+</head>
+<body>
+<section layout:fragment="content" class="panel">
+    <form action="" method="post">
+        <div class="col-md-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    <h2 class="panel-title">Peralatan Baru</h2>
+                </header>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="control-label">Serial Number</label>
+                                <input type="text" name="nama" placeholder="Serial Number" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="control-label">Jenis Barang</label>
+                                <select placeholder="Serial Number" name="" class="form-control">
+                                    <option value="">Please Select</option>
+                                    <option value="">-</option>
+                                </select>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label class="control-label">Nama Barang</label>
+                                            <input type="text"  name="nama" placeholder="Nama Barang" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label class="control-label">Harga Peroleh</label>
+                                            <input type="text" name="nama" placeholder="Harga Peroleh" class="form-control" >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label class="control-label">Tanggal Masuk</label>
+                                            <input type="text" name="nama" placeholder="hh/bb/ttt" class="form-control" >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label class="control-label">Lokasi</label>
+                                            <select placeholder="Serial Number" name="" class="form-control">
+                                                <option value="">-</option>
+                                                <option value="">-</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label class="control-label">User Barang</label>
+                                            <select placeholder="Serial Number" name="" class="form-control">
+                                                <option value="">-</option>
+                                                <option value="">-</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label class="control-label">Status</label>
+                                            <select placeholder="Serial Number" name="" class="form-control">
+                                                <option value="">-</option>
+                                                <option value="">-</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label class="control-label">Lokasi</label>
+                                            <select placeholder="Serial Number" name="" class="form-control">
+                                                <option value="">-</option>
+                                                <option value="">-</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label class="control-label">Keterangan</label>
+                                            <textarea placeholder="Keterangan" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <footer class="panel-footer">
+                    <button class="btn btn-primary" type="submit">Confirm</button>
+                    <a th:href="@{/peralatan/list}" id="addToTable" class="btn btn-danger">Cancel </a>
+                </footer>
+            </section>
+        </div>
+    </form>
+</section>
+</body>
+</html>

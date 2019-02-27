@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Peralatan</title>
+
+</head>
+<body>
+<section layout:fragment="content" class="panel">
+    <header class="panel-heading">
+        <h2 class="panel-title">Data Peralatan</h2>
+        <p class="panel-subtitle">
+    </header>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-4" align="right">
+                <div class="input-group input-search">
+                    <input type="text" class="form-control" name="q" id="q" placeholder="Search...">
+                    <span class="input-group-btn">
+						    <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+						</span>
+                </div>
+            </div>
+
+            <div class="col-sm-5" align="left">
+
+            </div>
+            <div class="col-sm-3" align="left">
+                <div class="mb-md">
+                    <a th:href="@{/peralatan/form}" id="addToTable" class="btn btn-primary">ADD ITEM <i class="fa fa-plus"></i></a>
+                    <div class="btn-group">
+                        <button type="button" class="mb-xs mt-xs mr-xs btn btn-success dropdown-toggle" data-toggle="dropdown">Export <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-condensed mb-none">
+                <thead>
+                <tr style="background-color: deepskyblue;">
+                    <th>No</th>
+                    <th>Jenis</th>
+                    <th>Nama</th>
+                    <th>Tanggal Masuk</th>
+                    <th>Harga</th>
+                    <th>Lokasi</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Projector</td>
+                    <td>Infocus M2 2312</td>
+                    <td>2019-01-14</td>
+                    <td>RP 1.000.000</td>
+                    <td>Gudang 1 - Sekolah</td>
+                    <td>Aktif</td>
+                    <td>
+                        <a href=""><i class="fa fa-pencil"></i></a>
+                        <a href="" class="delete-row"><i class="fa fa-trash-o"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Epson W105</td>
+                    <td>Infocus M2 2312</td>
+                    <td>2019-02-114</td>
+                    <td>RP 2.000.000</td>
+                    <td>Gudang 2 - Sekolah</td>
+                    <td>Simpan</td>
+                    <td>
+                        <a href=""><i class="fa fa-pencil"></i></a>
+                        <a href="" class="delete-row"><i class="fa fa-trash-o"></i></a>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+</body>
+</html>
